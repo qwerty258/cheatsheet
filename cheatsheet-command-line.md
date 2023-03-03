@@ -50,3 +50,9 @@ gcc get default include path
 gcc -xc -E -v -
 gcc -xc++ -E -v -
 ```
+
+find file end with extension
+
+```sh
+find . -type f -name *.rs
+```
