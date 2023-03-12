@@ -1,10 +1,15 @@
 vim
 ===
 
-Removing duplicate rows
+Remove duplicated rows with sort
 
 ```vim
 :sort u
+```
+Numeric sort, the 1, 2, 3, 4 ... 9, 10 way.
+
+```vim
+:sort n
 ```
 
 reindent the entire file
