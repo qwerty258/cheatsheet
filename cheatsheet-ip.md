@@ -14,6 +14,14 @@ ip -details link show <INTERFACE>
 ip -details link show can0
 ```
 
+Show all ip table info
+
+```bash
+ip rule list
+ip route show table <table>
+ip route show table all
+```
+
 Remove a default routing table
 
 ```bash
