@@ -56,3 +56,15 @@ find file end with extension
 ```sh
 find . -type f -name *.rs
 ```
+
+show nvme device logical sector size
+
+```sh
+nvme id-ns -H /dev/nvme0n1
+```
+
+change hard disk drive device logical sector size
+
+```sh
+hdparm --set-sector-size 4096 --please-destroy-my-drive /dev/sda
+```
