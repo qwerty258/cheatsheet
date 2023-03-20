@@ -68,3 +68,9 @@ change hard disk drive device logical sector size
 ```sh
 hdparm --set-sector-size 4096 --please-destroy-my-drive /dev/sda
 ```
+
+Redirect telnet output to file
+
+```sh
+telnet 10.124.122.199 2014 | tee -a -i ./log.log
+```
