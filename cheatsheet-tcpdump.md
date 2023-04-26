@@ -1,5 +1,5 @@
-tcpdum
-======
+tcpdump
+=======
 
 # Dump on specific interface
 
