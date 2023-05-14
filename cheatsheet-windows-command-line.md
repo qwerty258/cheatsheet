@@ -23,3 +23,8 @@ Just put the bat file in desired folder and run it.
 wsl --mount \\.\PHYSICALDRIVE0 --partition 2 --type ext4
 wsl --unmount \\.\PHYSICALDRIVE0
 ```
+# Extract Content of `*.chm`
+
+```bat
+hh.exe -decompile \path-to-save-folder \path-to-chm-file
+```
