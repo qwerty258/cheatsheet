@@ -30,3 +30,10 @@ pkgutil --only-dirs --files <your-package-id> | tail -r | tr '\n' '\0' | xargs -
 
 sudo pkgutil --forget <your-package-id>
 ```
+
+macOS reset App Store
+
+```sh
+trash -v ~/Library/Caches/com.apple.appstore
+trash -v ~/Library/Caches/com.apple.appstoreagent
+```
