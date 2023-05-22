@@ -28,3 +28,10 @@ Remove a default routing table
 ip route del default via <GATEWAY IP>
 ip route del default via 128.222.1.101
 ```
+
+Add route
+
+```bash
+ip route add 192.168.2.0/24 via 192.168.2.254 dev eth0
+ip route add default via 192.168.1.254
+```
