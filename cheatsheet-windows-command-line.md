@@ -28,3 +28,14 @@ wsl --unmount \\.\PHYSICALDRIVE0
 ```bat
 hh.exe -decompile \path-to-save-folder \path-to-chm-file
 ```
+# VHD Attach
+
+```bat
+@echo off
+echo select vdisk file="C:\Virtual Disk for Cache.vhd" >vhdsel
+echo attach vdisk>>vhdsel
+echo list disk>>vhdsel
+diskpart /s vhdsel
+del /f /q vhdsel
+exit
+```
