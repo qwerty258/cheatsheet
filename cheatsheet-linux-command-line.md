@@ -74,3 +74,10 @@ Redirect telnet output to file
 ```sh
 telnet 10.124.122.199 2014 | tee -a -i ./log.log
 ```
+
+export pdf to image
+
+```sh
+pdftoppm -png Linux_For_Beginners.pdf Linux_For_Beginners
+```
+
