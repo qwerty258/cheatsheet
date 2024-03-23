@@ -12,3 +12,9 @@ pip3 config -v list
 ```sh
 pip3 config debug
 ```
+
+# source code install module with setup.py
+
+```sh
+pip install . # pip will use setup.py to install your module. Avoid calling setup.py directly.
+```
