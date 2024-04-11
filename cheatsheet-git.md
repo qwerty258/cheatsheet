@@ -24,3 +24,9 @@ Combine last 3 commits into one
 ```sh
 git rebase -i HEAD~3
 ```
+
+Git pull without fetch submodules
+
+```sh
+git pull --no-recurse-submodules
+```
