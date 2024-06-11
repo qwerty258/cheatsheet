@@ -30,3 +30,9 @@ Git pull without fetch submodules
 ```sh
 git pull --no-recurse-submodules
 ```
+
+Modify last commit message
+
+```sh
+git commit --amend
+```
