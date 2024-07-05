@@ -13,10 +13,10 @@ Force reset to remote branch:
 git reset --hard origin/main
 ```
 
-Rebase branch
+Rebase branch without commit time change
 
 ```sh
-git rebase --onto <new-parent> <old-parent>
+git rebase --committer-date-is-author-date --onto <new-parent> <old-parent>
 ```
 
 Combine last 3 commits into one
