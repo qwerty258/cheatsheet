@@ -81,3 +81,15 @@ export pdf to image
 pdftoppm -png Linux_For_Beginners.pdf Linux_For_Beginners
 ```
 
+debian static ip
+
+```sh
+# Wired Ethernet Interface
+auto eth0
+# iface eth0 inet dhcp
+iface eth0 inet static
+address 10.0.22.250
+gateway 10.0.22.1
+netmask 255.255.255.0
+up route add -net 10.0.0.0 netmask 255.0.0.0 gw 10.0.22.1 dev eth0
+```
