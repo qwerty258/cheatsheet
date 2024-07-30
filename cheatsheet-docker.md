@@ -80,6 +80,12 @@ docker exec -it <containerId> sh
 docker-compose exec <serviceName> <shell>
 ```
 
+Shell into a image
+
+```sh
+docker run -it image_name sh
+```
+
 Scale container
 
 ```sh
