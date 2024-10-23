@@ -91,3 +91,9 @@ Scale container
 ```sh
 docker-compose up -d --scale api=4
 ```
+
+Clean up
+
+```sh
+docker system prune
+```
