@@ -33,3 +33,9 @@ diskpart /s vhdsel
 del /f /q vhdsel
 exit
 ```
+
+# Get timestamp in ISO format in powershell
+
+```
+Get-Date -Format "o"
+```
