@@ -29,6 +29,12 @@ ip route del default via <GATEWAY IP>
 ip route del default via 128.222.1.101
 ```
 
+Add IP to interface
+
+```
+ip address add 192.168.1.100 dev eth0
+```
+
 Add route
 
 ```bash
