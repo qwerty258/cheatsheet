@@ -24,3 +24,15 @@ To display the name of the current file, type Ctrl-G (or press 1 then Ctrl-G for
 1
 Ctrl-G
 ```
+
+Replace string
+
+```vim
+:%s/string to replace/new string/g
+```
+
+Delete line with string
+
+```vim
+:g/string/d
+```
