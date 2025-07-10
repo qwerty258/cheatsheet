@@ -7,6 +7,12 @@ Remove file from history:
 git filter-repo --force --invert-paths --path PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA
 ```
 
+Only keep directories or files:
+
+```sh
+git filter-repo --force --path PATH-1-TO-DIRECTORY-YOU-WANT-KEEP --path PATH-2-TO-DIRECTORY-YOU-WANT-KEEP --path PATH-TO-FILE-YOU-WANT-KEEP
+```
+
 Force reset to remote branch:
 
 ```sh
