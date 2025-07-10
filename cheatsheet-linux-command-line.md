@@ -94,3 +94,9 @@ gateway 10.0.22.1
 netmask 255.255.255.0
 up route add -net 10.0.0.0 netmask 255.0.0.0 gw 10.0.22.1 dev eth0
 ```
+
+Capture standard output, add timestamp and save to log
+
+```sh
+stdbuf -oL script -f >(ts "%F %.T" > session.log)
+```
