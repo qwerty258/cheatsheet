@@ -51,13 +51,6 @@ gcc -xc -E -v -
 gcc -xc++ -E -v -
 ```
 
-find file end with extension
-
-```sh
-find . -type f -name *.rs
-find . -type f -name "*.txt" -exec mv "{}" . \; # find file and move to current directory
-```
-
 show nvme device logical sector size
 
 ```sh
