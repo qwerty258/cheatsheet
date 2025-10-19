@@ -93,3 +93,9 @@ Capture standard output, add timestamp and save to log
 ```sh
 stdbuf -oL script -f >(ts "%F %.T" > session.log)
 ```
+
+pandoc convert markdown to pdf
+
+```sh
+pandoc --pdf-engine=xelatex -V papersize:a4 -f markdown -t pdf document.md -o output.pdf
+```
