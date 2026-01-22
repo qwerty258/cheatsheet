@@ -42,3 +42,13 @@ Modify last commit message
 ```sh
 git commit --amend
 ```
+
+cherry-pick a commit from another git repository
+
+```sh
+git remote add other https://example.link/repository.git
+git fetch other
+git cherry-pick commit
+git remote remove other
+git gc
+```
