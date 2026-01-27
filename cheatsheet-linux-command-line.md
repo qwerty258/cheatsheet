@@ -7,12 +7,6 @@ Search using grep
 grep -rnw ./ -e "str"
 ```
 
-Batch rename
-
-```sh
-rename "s/PNG/png" *
-```
-
 emmc check
 
 ```sh
