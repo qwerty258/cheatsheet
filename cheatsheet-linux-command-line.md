@@ -23,7 +23,8 @@ gsettings reset org.gnome.shell app-picker-layout
 ARP scan
 
 ```sh
-sodo arp-scan -I <interface> -l
+sudo arp-scan -I <interface> -l
+sudo arp-scan -I <interface> -l --ouifile=/usr/share/arp-scan/ieee-oui.txt
 ```
 
 images to pdf
