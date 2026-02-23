@@ -36,7 +36,7 @@ exit
 
 # Get timestamp in ISO format in powershell
 
-```
+```powershell
 Get-Date -Format "o"
 ```
 
@@ -44,4 +44,10 @@ Get-Date -Format "o"
 
 ```bat
 for /f "delims=" %d in ('dir /s /b /ad ^| sort /r') do rd "%d"
+```
+
+# Powershell registry search
+
+```powershell
+Get-ChildItem -Path Registry::HKEY_CLASSES_ROOT\xmp.*
 ```
