@@ -55,7 +55,7 @@ docker ps -a
 ```sh
 docker-compose build
 docker-compose up
-docker—compose up —d —-no—deps [service]
+docker-compose up -d --no-deps [service]
 docker-compose down
 
 docker-compose ps
