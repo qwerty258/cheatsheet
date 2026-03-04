@@ -36,3 +36,10 @@ Delete line with string
 ```vim
 :g/string/d
 ```
+
+Match for non-ASCII characters
+
+```vim
+/[^\x00-\x7F]
+/[^\d0-\d127]
+```
