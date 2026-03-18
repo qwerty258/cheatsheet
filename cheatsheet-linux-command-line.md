@@ -94,3 +94,10 @@ pandoc convert markdown to pdf
 ```sh
 pandoc --pdf-engine=xelatex -V papersize:a4 -f markdown -t pdf document.md -o output.pdf
 ```
+
+```sh
+# get list of resources
+yt-dlp --js-runtimes node --proxy socks5://proxy.local:1080 -F URL
+# get specific resource
+yt-dlp --js-runtimes node --proxy socks5://proxy.local:1080 -o "%(uploader)s-%(upload_date)s-[%(id)s]-%(title)s.%(ext)s" -f 1 URL
+```
