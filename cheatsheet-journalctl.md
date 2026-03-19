@@ -3,6 +3,8 @@ journalctl
 
 ```sh
 journalctl --list-boots
+# show log of specific boot count
+journalctl -b 0
 ```
 
 ```sh
@@ -19,4 +21,5 @@ journalctl --vacuum-time=2d
 
 ```sh
 journalctl -o short-iso-precise
+journalctl -o short-iso-precise --utc
 ```
