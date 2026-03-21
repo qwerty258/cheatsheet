@@ -1,45 +1,72 @@
 vim
 ===
 
-Remove duplicated rows with sort
+# remove duplicated rows with sort
 
 ```vim
 :sort u
 ```
-Numeric sort, the 1, 2, 3, 4 ... 9, 10 way.
+# numeric sort, the 1, 2, 3, 4 ... 9, 10 way.
 
 ```vim
 :sort n
 ```
 
-reindent the entire file
+# reindent the entire file
 
 ```vim
 gg=G
 ```
 
-To display the name of the current file, type Ctrl-G (or press 1 then Ctrl-G for the full path).
+# display the name of the current file
 
-```
-1
-Ctrl-G
-```
+type `Ctrl` `g` (or press `1` then `Ctrl` `g` for the full path).
 
-Replace string
+# replace string
 
 ```vim
 :%s/string to replace/new string/g
 ```
 
-Delete line with string
+# delete line with string
 
 ```vim
 :g/string/d
 ```
 
-Match for non-ASCII characters
+# match for ascii characters
+
+```vim
+/[\x00-\x7F]
+/[\d0-\d127]
+```
+
+# match for non-ascii characters
 
 ```vim
 /[^\x00-\x7F]
 /[^\d0-\d127]
 ```
+
+# multiline modification
+
+1. move the cursor to the character you want insert before
+2. enter visual block mode (`Ctrl` `v`)
+3. use `j`, `k`, `g`, `G` (`Shift` `g`) to move cursor around to select multiple lines
+4. press `I` (`Shift` `i`)
+5. type in characters you want to insert
+6. press `Esc` twice
+
+# open a file in a new buffer and vertically split window
+
+```vim
+:vs filename
+```
+
+# split window vertically
+
+`Ctrl` `wv`
+
+# switch windows
+
+`Ctrl` `ww`
