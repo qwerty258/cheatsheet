@@ -95,5 +95,11 @@ docker-compose up -d --scale api=4
 Clean up
 
 ```sh
+docker image prune
+docker image prune -a
+docker container prune
+docker volume prune
+docker network prune
 docker system prune
+docker system prune --volumes
 ```
