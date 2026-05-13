@@ -51,3 +51,10 @@ for /f "delims=" %d in ('dir /s /b /ad ^| sort /r') do rd "%d"
 ```powershell
 Get-ChildItem -Path Registry::HKEY_CLASSES_ROOT\xmp.*
 ```
+
+# pnputil list devices
+
+```bat
+pnputil /enum-devices /bus PCI /deviceids   # list PCIe bus devices
+pnputil /enum-devices /bus USB              # list USB bus devices
+```
