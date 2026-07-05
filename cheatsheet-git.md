@@ -41,6 +41,9 @@ Modify last commit message
 
 ```sh
 git commit --amend
+git commit --amend --date="2008-01-01T00:00:00+08:00" --reset-author # change auther date and reset author to current git user
+git commit --amend --author="Author Name <email@address.com>" # change auther
+git commit --amend --date="2008-01-01T00:00:00+08:00" --author="Author Name <email@address.com>" # change auther and auther date
 ```
 
 cherry-pick a commit from another git repository
