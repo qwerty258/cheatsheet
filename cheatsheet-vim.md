@@ -70,3 +70,9 @@ type `Ctrl` `g` (or press `1` then `Ctrl` `g` for the full path).
 # switch windows
 
 `Ctrl` `ww`
+
+# reverse lines of the entire file
+
+```vim
+:g/^/m0
+```
