@@ -55,3 +55,9 @@ git cherry-pick commit
 git remote remove other
 git gc
 ```
+
+drop the root commit (first commit)
+
+```sh
+git rebase --committer-date-is-author-date -i --root # change the root commit to drop
+```
