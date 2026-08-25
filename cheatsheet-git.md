@@ -61,3 +61,10 @@ drop the root commit (first commit)
 ```sh
 git rebase --committer-date-is-author-date -i --root # change the root commit to drop
 ```
+
+# large file system
+
+```sh
+git lfs ls-files    # list large files
+git lfs pull        # manually update large files
+```
